@@ -6,7 +6,7 @@ module.exports = function (app) {
     response.sendFile(path.join(__dirname, "/../public/survey.html"));
   });
 
-  app.use( function(request, response) {
+  app.use(function(request, response) {
     response.sendFile(path.join(__dirname, "/../public/home.html"));
   });
 
