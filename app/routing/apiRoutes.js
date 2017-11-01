@@ -8,21 +8,38 @@ module.exports = function (app) {
 
   app.post('/api/friends', function(request, response) {
 
-    // don't mess with these two
-    friendsData.push(request.body);
-    response.json(friendsData);
+    var bestMatch = {
+      name: "",
+      photo: "",
+      friendDifference: 1000
+    };
 
-
-    for (var i = 0; i < friendsData.length; i++) {
-      console.log(friendsData[i].name + friendsData[i].score);
-    }
+    var userData = request.body;
+    var userScore = userData.score;
 
     var totalDifference = 0;
+    
+    for (var i = 0; i < friendsData.length; i++) {
 
-    function checkCompatibility (userScores) {
+      totalDifference = 0;
+
+      for (var j = 0; friendsData[i].score[j]; j++) {
+
+        totalDifference += Math.abs(parseInt(userScore[j]) - parseInt(friendsData[i].score[j]));
+
+        if (totalDifference <= bestMatch.friendDifference) {
+          bestMatch.name = friendsData[i].name;
+          bestMatch.photo = friendsData[i].photo;
+          bestMatch.friendDifference = totalDifference;
+        }
+
+      }
 
     }
 
+    friendsData.push(userData);
+
+    response.json(bestMatch);
 
   })
 
