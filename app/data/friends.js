@@ -29,6 +29,11 @@ var friendsData = [
     name: 'hagrid',
     photo: 'http://www.the-leaky-cauldron.org/wp-content/uploads/assets/Hagrid.jpg',
     score: ['3', '3', '3', '3', '3', '3', '3', '3', '3', '3']
+  },
+  {
+    name: 'voldemort',
+    photo: 'http://digitalspyuk.cdnds.net/17/22/1280x640/landscape-1496159558-voldemort.jpg',
+    score: ['5', '1', '5', '1', '5', '1', '5', '1', '5', '1']
   }
 
 ];
