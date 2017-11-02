@@ -1,5 +1,4 @@
-# Friend Finder
-## Hogwarts Edition
+# Friend Finder - Hogwarts Edition
 
 ### Ever wonder who your best friend at Hogwarts might be? Take this easy quiz and find out!
 
@@ -9,4 +8,6 @@
 
 ### Ready to find your most comPOTTERble friend? Check it out [here](https://rocky-reef-32914.herokuapp.com/)!
 
-##### Made by William Chandler 2017
+###### Made by William Chandler 2017
+
+![harry potter](https://www.quirkybyte.com/wp-content/uploads/2016/11/dp1-8.jpg)
