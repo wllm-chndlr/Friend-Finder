@@ -9,6 +9,7 @@
 ### Ready to find your most comPOTTERble friend? Check it out [here](https://rocky-reef-32914.herokuapp.com/)!
 
 ###### *Made by William Chandler 2017*
+###### *with Node.js, Express, AJAX, jQuery, Javascript, HTML, and CSS*
 
 
 ![harry potter](http://ll-c.ooyala.com/e1/9wMmZoYzE6ApkUTFe49SpItVZ2zpPW-a/promo328483561)
