@@ -1,4 +1,6 @@
+// Require the data of all potential friends
 var friendsData = require ('../data/friends.js');
+
 
 module.exports = function (app) {
 
@@ -8,10 +10,11 @@ module.exports = function (app) {
 
   app.post('/api/friends', function(request, response) {
 
-    var bestMatch = {
+    // Establish variable for the most compatible friend
+    var bestFriend = {
       name: "",
       photo: "",
-      friendDifference: 1000
+      maxDifference: 1000
     };
 
     var userData = request.body;
@@ -27,10 +30,10 @@ module.exports = function (app) {
 
         totalDifference += Math.abs(parseInt(userScore[j]) - parseInt(friendsData[i].score[j]));
 
-        if (totalDifference <= bestMatch.friendDifference) {
-          bestMatch.name = friendsData[i].name;
-          bestMatch.photo = friendsData[i].photo;
-          bestMatch.friendDifference = totalDifference;
+        if (totalDifference <= bestFriend.maxDifference) {
+          bestFriend.name = friendsData[i].name;
+          bestFriend.photo = friendsData[i].photo;
+          bestFriend.maxDifference = totalDifference;
         }
 
       }
@@ -39,7 +42,7 @@ module.exports = function (app) {
 
     friendsData.push(userData);
 
-    response.json(bestMatch);
+    response.json(bestFriend);
 
   })
 

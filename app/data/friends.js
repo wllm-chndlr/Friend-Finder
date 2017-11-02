@@ -1,5 +1,5 @@
+// Array of potential friends
 var friendsData = [
-
   {
     name: 'harry potter',
     photo: 'https://pre00.deviantart.net/1ffd/th/pre/f/2013/266/e/c/harry_potter_and_the_deathly_hallows__d_by_speedportraits-d6nccbt.jpg',
@@ -34,8 +34,13 @@ var friendsData = [
     name: 'voldemort',
     photo: 'http://digitalspyuk.cdnds.net/17/22/1280x640/landscape-1496159558-voldemort.jpg',
     score: ['5', '1', '5', '1', '5', '1', '5', '1', '5', '1']
+  },
+  {
+    name: 'draco malfoy',
+    photo: 'https://images.hellogiggles.com/uploads/2016/06/01213847/malfoy.jpg',
+    score: ['2', '3', '1', '2', '4', '4', '3', '2', '4', '2']
   }
-
 ];
 
+// Export data for compatible friends
 module.exports = friendsData;

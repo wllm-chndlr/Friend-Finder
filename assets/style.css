@@ -1,0 +1,51 @@
+body {
+  background-image: url("http://images.hellogiggles.com/uploads/2015/09/29/11_hoqwarts_summer_establisher-lg.jpg");
+  font-family: 'IM Fell Double Pica SC', serif;
+  color: #303030;
+  font-size: 25px;
+}
+
+a {
+  color: #303030;
+}
+
+#main, #bf {
+  background-color: rgb(204, 204, 204);
+  opacity: 0.9;
+}
+
+#firsthalfofqs {
+  float: left;
+  max-width: 45%;
+}
+
+#secondhalfofqs {
+  float: right;
+  max-width: 45%;
+}
+
+#bf {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  z-index: 4;
+}
+
+#foot {
+  text-align: center;
+  margin-right: 0px;
+}
+
+#inputs {
+  max-width: 50%;
+}
+
+#submit {
+  margin-top: 20px;
+}
+
+#q10, select {
+  z-index: 1000;
+  overflow: visible;
+}
