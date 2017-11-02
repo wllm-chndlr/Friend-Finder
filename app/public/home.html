@@ -2,9 +2,8 @@
 <html lang="en">
   
 <head>
-  
-	<meta charset="UTF-8">
-	<title>FriendFinder</title>
+  <meta charset="UTF-8">
+	<title>Friend Finder - Hogwarts Edition</title>
 
 	<!-- Bootstrap & jQuery -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -14,34 +13,60 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="../../assets/style.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica+SC" rel="stylesheet">
+
+	<style>
+		body {
+			background-image: url("http://images.hellogiggles.com/uploads/2015/09/29/11_hoqwarts_summer_establisher-lg.jpg");
+			font-family: 'IM Fell Double Pica SC', serif;
+			color: #303030;
+			font-size: 25px;
+		}
+		a {
+			color: #303030;
+		}
+		#main, #bf, .jumbotron {
+			background-color: rgb(204, 204, 204);
+			opacity: 0.9;
+		}
+		#bf {
+			width: 50%;
+			margin: auto;
+			text-align: center;
+			margin-top: 20px;
+		}
+	</style>
 
 </head>
 
-<body style="">
+<body>
 
-	<div class="container">
+	<div class="container" id="main">
 		
 		<div class="jumbotron">
-			<h1 class=""><i class="fa fa-users" aria-hidden="true"></i> Friend Finder - Hogwarts Edition</h1>
+			
+			<h1>Friend Finder</h1>
+			<h1><em>Hogwarts Edition</em></h1>
+			
 			<hr>
+			
 			<h2 class="">Answer a few easy questions. </h2>
-			<h2 class="">Then find the friend with the greatest compatibility!</h2>
+			<h2 class="">Then find the friend with the greatest comPOTTERbility!</h2>
+			
 			<br>
 
 			<div class="">
-				<a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>	
+				<a href="/survey"><button type="button" class="btn btn-lg btn-warning"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>	
 			</div>
 
 		</div>
 
-    <footer class="footer">
-      <div class="container">
-        <p>
-          <a href="/api/friends">API Friends List</a> | <a href="https://github.com/wllm-chndlr/Friend-Finder">GitHub Repo</a>
-        </p>
-      </div>
+    <footer class="footer" id="bf">
+			<p>
+				<a href="/api/friends">API Friends List</a> | <a href="https://github.com/wllm-chndlr/Friend-Finder">GitHub Repo</a>
+			</p>
+			<br>
     </footer>
 
 	</div>

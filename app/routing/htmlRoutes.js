@@ -1,5 +1,7 @@
+// Dependencies
 var path = require('path');
 
+// Export specific HTML routes
 module.exports = function (app) {
 
   app.get("/survey", function(request, response) {
