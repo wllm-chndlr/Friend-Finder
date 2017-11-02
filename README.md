@@ -8,6 +8,7 @@
 
 ### Ready to find your most comPOTTERble friend? Check it out [here](https://rocky-reef-32914.herokuapp.com/)!
 
-###### Made by William Chandler 2017
+###### *Made by William Chandler 2017*
 
-![harry potter](https://www.quirkybyte.com/wp-content/uploads/2016/11/dp1-8.jpg)
+
+![harry potter](http://ll-c.ooyala.com/e1/9wMmZoYzE6ApkUTFe49SpItVZ2zpPW-a/promo328483561)
